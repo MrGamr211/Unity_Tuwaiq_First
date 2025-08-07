@@ -34,7 +34,7 @@ public class Movement : MonoBehaviour
         Vector3 Move = new Vector3(Horizontal, 0, Vertical);
         Vector3 Rotate_X = Input.mousePosition;
 
-        rb.gameObject.transform.rotation = quaternion.Euler(new Vector3(0, Rotate_X.x * 0.01f, 0));
+        rb.gameObject.transform.rotation = quaternion.Euler(new Vector3(0f, Rotate_X.x * 0.01f, 0f));
         rb.MovePosition(rb.position + Move * Speed * Time.fixedDeltaTime);
 
 
