@@ -6,11 +6,11 @@ using UnityEditor;
 public class Mice : MonoBehaviour
 {
     public Camera looking;
-    public Rigidbody body;
+    public CharacterController body;
     void Start()
     {
        
-        body = gameObject.GetComponent<Rigidbody>();
+        body = gameObject.GetComponent<CharacterController>();
         // Look_X = Empty.transform.rotation;
         
     }
@@ -23,7 +23,7 @@ public class Mice : MonoBehaviour
     {
         Vector3 move = Input.mousePosition;
         looking.gameObject.transform.rotation = Quaternion.Euler(new Vector2(move.y * sens * -1, move.x * sens));
-        //body.gameObject.transform.rotation = Quaternion.Euler(new Vector3(0, move.x * 0.01f, 0));
+        // body.gameObject.transform.parent.rotation = Quaternion.Euler(new Vector2(0f, move.x * sens));
 
     }
     
