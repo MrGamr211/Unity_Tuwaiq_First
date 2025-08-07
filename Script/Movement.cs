@@ -8,14 +8,14 @@ public class Movement : MonoBehaviour
     public Rigidbody rb;
     public float Speed = 5;
     public float Jump = 100;
-    void Awake()
-    {
-        Debug.Log("Awake");
-    }
+    // void Awake()
+    // {
+    //     Debug.Log("Awake");
+    // }
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("start");
+        // Debug.Log("start");
         rb = gameObject.GetComponent<Rigidbody>();
 
         
@@ -41,12 +41,12 @@ public class Movement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.AddForce(Vector3.up * Jump, ForceMode.Impulse);
-            Debug.Log(IsGrounded());
+            // Debug.Log(IsGrounded());
         }
-        else
-        {
-            Debug.Log(IsGrounded());
-        }
+        // else
+        // {
+        //     Debug.Log(IsGrounded());
+        // }
 
 // }
     }
