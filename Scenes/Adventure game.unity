@@ -623,8 +623,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Character: {fileID: 107851315}
   speed: 10
-  gravity: -9.81
-  jumpPower: 10
+  gravity: -19.6
+  jumpPower: 5
   cameraTransform: {fileID: 107851314}
 --- !u!1 &179296676
 GameObject:
