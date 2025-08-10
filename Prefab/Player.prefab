@@ -384,9 +384,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Character: {fileID: 3954836450365756866}
-  speed: 10
+  speed: 8
   gravity: -19.6
-  jumpPower: 5
+  jumpPower: 1.5
   cameraTransform: {fileID: 2875795186359474381}
 --- !u!114 &734696372431684020
 MonoBehaviour:
