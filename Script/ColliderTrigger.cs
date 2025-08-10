@@ -22,7 +22,14 @@ public class ColliderTrigger : MonoBehaviour
     }
     public void OnTriggerExit(Collider other)
     {
-        Door.SetActive(true);
+        if (other.tag == "Coin") // blackList
+        {
+            // blackList
+        }
+        else
+        {
+            Door.SetActive(true);
+        }
     }
 
 }

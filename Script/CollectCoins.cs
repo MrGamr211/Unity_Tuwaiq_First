@@ -9,7 +9,7 @@ public class CollectCoins : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Destroy(gameObject); //Destroy self
-            CoinsCollected += 1;
+            CoinsCollected++;
             Debug.Log(CoinsCollected);
             //Destroy(collision.gameObject); Destroy the collided
 
