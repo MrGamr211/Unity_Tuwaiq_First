@@ -13,13 +13,13 @@ public class ColliderTriggerChangeScene : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Coin") // blackList
+        if (other.tag == "Player") 
         {
-            // blackList
+            SceneManager.LoadScene(SceneName);
         }
         else
         {
-            SceneManager.LoadScene(SceneName);
+            // WhiteList
         }
     }
 

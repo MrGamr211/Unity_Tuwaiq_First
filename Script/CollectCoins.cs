@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CollectCoins : MonoBehaviour
 {
-    private int CoinsCollected;
+     int CoinsCollected;
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player")
@@ -12,7 +12,7 @@ public class CollectCoins : MonoBehaviour
             CoinsCollected++;
             Debug.Log(CoinsCollected);
             //Destroy(collision.gameObject); Destroy the collided
-
+            //return CoinsCollected;
 
         }
     }
