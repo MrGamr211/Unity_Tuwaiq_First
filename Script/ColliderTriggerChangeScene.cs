@@ -11,9 +11,16 @@ public class ColliderTriggerChangeScene : MonoBehaviour
     {
     }
 
-    public void OnTriggerEnter(Collider Player)
+    public void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(SceneName);
+        if (other.tag == "Coin") // blackList
+        {
+            // blackList
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneName);
+        }
     }
 
 // this code are taken from this video (https://youtube.com/shorts/qCKmtIKmRyQ?si=Vb5KhQPRKor-bghq)
