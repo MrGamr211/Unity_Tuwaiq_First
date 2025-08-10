@@ -4,6 +4,8 @@ using UnityEngine;
 public class ColliderTrigger : MonoBehaviour
 {
     public GameObject Door;
+    public AudioClip Open;
+    public AudioClip Close;
     void Start()
     {
 
@@ -17,7 +19,7 @@ public class ColliderTrigger : MonoBehaviour
         }
         else
         {
-        Door.SetActive(false);
+            Door.SetActive(false);
         }
     }
     public void OnTriggerExit(Collider other)
