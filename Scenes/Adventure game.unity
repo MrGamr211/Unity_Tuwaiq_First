@@ -485,6 +485,7 @@ GameObject:
   - component: {fileID: 107851311}
   - component: {fileID: 107851315}
   - component: {fileID: 107851316}
+  - component: {fileID: 107851317}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -626,6 +627,19 @@ MonoBehaviour:
   gravity: -19.6
   jumpPower: 5
   cameraTransform: {fileID: 107851314}
+--- !u!114 &107851317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107851308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ee6d26d52dcd624ca6eac6cf1f946d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: Adventure game
 --- !u!1 &169841508
 GameObject:
   m_ObjectHideFlags: 0
