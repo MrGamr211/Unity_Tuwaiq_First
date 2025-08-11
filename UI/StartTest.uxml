@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/StartTest.uss?fileID=7433441132597879392&amp;guid=7cec5422620560648b43c4ec9e20b520&amp;type=3#StartTest" />
+</ui:UXML>
