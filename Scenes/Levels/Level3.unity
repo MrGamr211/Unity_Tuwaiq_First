@@ -2920,9 +2920,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868734523}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.0000029504295, z: -0, w: 1}
-  m_LocalPosition: {x: -0.018992424, y: 0, z: 0.000000041839087}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.018938217, y: 0, z: -0.0010531282}
+  m_LocalScale: {x: 1.08, y: 1.05, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -5032,7 +5032,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 734696372431684020, guid: dceb46381d44e2045be8fa18ce8f2822, type: 3}
       propertyPath: SceneName
-      value: Level2
+      value: Level3
       objectReference: {fileID: 0}
     - target: {fileID: 2875795186359474381, guid: dceb46381d44e2045be8fa18ce8f2822, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5659,6 +5659,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 558443063921936757, guid: 2b44be18ed2c36241b72aba82c34171f, type: 3}
+      propertyPath: SceneName
+      value: Killed Menu Level3
+      objectReference: {fileID: 0}
     - target: {fileID: 7031260780208326166, guid: 2b44be18ed2c36241b72aba82c34171f, type: 3}
       propertyPath: m_Name
       value: OnTrigger Kill Scene
