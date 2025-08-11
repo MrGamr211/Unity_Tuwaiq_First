@@ -6,6 +6,8 @@ public class ColliderTrigger : MonoBehaviour
     public GameObject Door;
     public AudioClip Open;
     public AudioClip Close;
+    public AudioSource DoorAuClose;
+    public AudioSource DoorAuOpen;
     void Start()
     {
 
@@ -20,6 +22,7 @@ public class ColliderTrigger : MonoBehaviour
         else
         {
             Door.SetActive(false);
+            DoorAuClose.Play();
         }
     }
     public void OnTriggerExit(Collider other)
@@ -31,7 +34,7 @@ public class ColliderTrigger : MonoBehaviour
         else
         {
             Door.SetActive(true);
+            DoorAuOpen.Play();
         }
     }
-
 }
