@@ -3,25 +3,27 @@ using UnityEngine;
 
 public class CollectCoins : MonoBehaviour
 {
-     int CoinsCollected;
-    void OnCollisionEnter(Collision collision)
+    int CoinsCollected;
+    private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player")
+
+        if (collision.gameObject.tag == "Coin")
         {
-            Destroy(gameObject); //Destroy self
+            // Destroy(gameObject); //Destroy self
+            Destroy(collision.gameObject); // Destroy the collided
             CoinsCollected++;
             Debug.Log(CoinsCollected);
             //Destroy(collision.gameObject); Destroy the collided
-            // return CoinsCollected;
+            //return CoinsCollected;
 
         }
-        if (collision.gameObject.tag == "Coin")
-        {
-            Destroy(collision.gameObject);
-            CoinsCollected++;
-            Debug.Log(CoinsCollected);
-            // return CoinsCollected;
+        // if (collision.gameObject.tag == "Coin")
+        // {
+        //     Destroy(collision.gameObject);
+        //     CoinsCollected++;
+        //     Debug.Log(CoinsCollected);
+        //     // return CoinsCollected;
 
-        }
+        // }
     }
 }

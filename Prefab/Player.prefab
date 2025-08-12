@@ -247,6 +247,7 @@ GameObject:
   - component: {fileID: 3954836450365756866}
   - component: {fileID: 6390402903307451735}
   - component: {fileID: 734696372431684020}
+  - component: {fileID: -810720207701842950}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -401,3 +402,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Adventure game
+--- !u!114 &-810720207701842950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9161840770865364279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af9680693ac349b47bd950f1a6e8cf6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
