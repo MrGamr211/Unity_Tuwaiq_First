@@ -12,7 +12,15 @@ public class CollectCoins : MonoBehaviour
             CoinsCollected++;
             Debug.Log(CoinsCollected);
             //Destroy(collision.gameObject); Destroy the collided
-            //return CoinsCollected;
+            // return CoinsCollected;
+
+        }
+        if (collision.gameObject.tag == "Coin")
+        {
+            Destroy(collision.gameObject);
+            CoinsCollected++;
+            Debug.Log(CoinsCollected);
+            // return CoinsCollected;
 
         }
     }
