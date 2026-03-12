@@ -11,6 +11,7 @@ public class CharMovement : MonoBehaviour
     public float jumpPower = 2f;
     float Velocity;
     public Transform cameraTransform;
+    public int UiCoins;
 
     void Update()
     {
@@ -58,6 +59,12 @@ public class CharMovement : MonoBehaviour
         {
             Vector3 force = hit.moveDirection * 5f; 
             rb.AddForce(force, ForceMode.Impulse);
+        }
+        if (hit.gameObject.tag == "Coin")
+        {
+            Destroy(hit.gameObject);
+            UiCoins++;
+            Debug.Log(UiCoins);
         }
     }
 }
